@@ -27,4 +27,4 @@ print("\n\n")
                                                                                           
                                   
 print("Now it's your turn:")
-print("Find this line (line 30) in the welcome_to_ct8.py file, then change the message to say a fact about you.")                                  
+print("I have done coding classes is Rainier Scholars in the winter for 8 weeks! ")                                  

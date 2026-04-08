@@ -1,2 +1,5 @@
 # Custom Dictionary Words
 exitonclick
+Finklemiten
+Tiddle
+Tiddlewink

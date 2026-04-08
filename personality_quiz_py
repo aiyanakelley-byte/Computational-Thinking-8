@@ -1,0 +1,97 @@
+name = input(" what is you name user?")
+Horror_points = 0
+Crime_points = 0
+Adventure_points = 0
+Romance_points = 0
+Thriller_points = 0
+Comedy_points = 0
+Fantasy_points= 0
+Drama_points = 0
+
+
+print(f"Hello {name} I wanted you to test out this personality quiz based on the type of movie/show genre you like most, have fun")
+
+answer1 = input("do you prefer A Happy, loving, and joyful, B suspenseful and problem solving, or C gut wrenching, disgusting, and horrifying movies?")
+if answer1 == "A":
+    Fantasy_points+= 4
+    Comedy_points+= 2
+    Romance_points+= 1
+    Adventure_points+= 1
+elif answer1 == "B":
+    Drama_points+= 1
+    Crime_points+= 3
+elif answer1 == "C":
+    Thriller_points+= 2
+    Horror_points+= 4
+
+answer2 = input(" which movie do you prefer A shrek, B batman, or C scream? choose one")
+if answer2 == "A":
+    Fantasy_points+= 3
+    Comedy_points+= 2
+    Romance_points+= 4
+    Adventure_points+= 1
+elif answer2 == "B":
+    Drama_points+= 2
+    Crime_points+= 4
+elif answer2 == "C":
+    Thriller_points+= 3
+    Horror_points+= 3
+
+answer3 = input("do you prefer A Dream-works, B Warner Bros, or C A24?")
+if answer3 == "A" or answer3 == "B":
+    Fantasy_points+= 3
+    Comedy_points+= 3
+    Romance_points+= 2
+    Adventure_points+= 1
+    Drama_points+= 3
+    Crime_points+= 6
+elif answer3 == "C":
+    Thriller_points+= 1
+    Horror_points+= 1
+
+answer4 = input(" What show do you prefer A Miraculous Ladybug and Cat noir, B The rookie, or C Wednesday?")
+if answer4 == "A":
+    Fantasy_points+= 2
+    Comedy_points+= 3
+    Romance_points+= 2
+    Adventure_points+= 1
+elif answer4 == "B" and answer4 == "C":
+     Drama_points+= 2
+     Crime_points+= 4
+     Thriller_points+= 3
+     Horror_points+= 4
+
+answer5 = input("last question what type of colors do you prefer A pastels, B shades( grey, black, ect), or C the colors red, blue, green, and white?")
+if answer5 == "A":
+    Fantasy_points+= 4
+    Comedy_points+= 2
+    Romance_points+= 6
+    Adventure_points+= 1
+elif answer5 == "B":
+     Drama_points+= 3
+     Crime_points+= 2
+elif answer5 == "C":
+    Thriller_points+= 4
+    Horror_points+= 6
+
+if Fantasy_points > Comedy_points and Fantasy_points > Adventure_points and Fantasy_points > Romance_points and Fantasy_points > Drama_points and Fantasy_points > Crime_points and Fantasy_points > Thriller_points and Fantasy_points > Horror_points :
+    print(" your top movie/show genre is Fantasy,which means you enjoy fairytales and happy endings! have you ever watched shrek?")
+elif Comedy_points > Fantasy_points and  Comedy_points > Adventure_points and Comedy_points > Romance_points and Comedy_points > Drama_points and Comedy_points > Crime_points and Comedy_points > Thriller_points and Comedy_points > Horror_points:
+    print("  your top movie/show genre is comedy which means you enjoy laughing and love being entertained! have you ever watched The Mask or Girls Trip? ")
+elif  Drama_points > Fantasy_points and  Drama_points > Comedy_points and  Drama_points > Adventure_points and  Drama_points > Romance_points and  Drama_points > Thriller_points and  Drama_points > Crime_points and  Drama_points > Horror_points:
+    print(" your top movie/show genre is drama which means you enjoy knowing all the tea and love involved in people going in hand! have you watched The Summer I Turned Pretty?")
+elif Crime_points > Fantasy_points and Crime_points > Comedy_points and Crime_points > Adventure_points and Crime_points> Romance_points and Crime_points > Drama_points and Crime_points > Thriller_points and Crime_points > Horror_points:
+    print(" your top movie/show genre is crime meaning that you like problem solving, real life crime scenarios, and true crime. do you by chance watch Law And Order?")
+elif Thriller_points > Fantasy_points and Thriller_points > Comedy_points and Thriller_points > Adventure_points and Thriller_points > Romance_points and Thriller_points > Drama_points and Thriller_points > Crime_points and Thriller_points > Horror_points:
+    print(" you top movie/show genre is thriller which indicates that you enjoy watching things that may startle you but not two much. have you watched The Capture?")
+elif Horror_points > Fantasy_points and Horror_points > Comedy_points and Horror_points > Adventure_points and Horror_points > Romance_points and Horror_points > Drama_points and Horror_points >  Crime_points and Horror_points > Thriller_points:
+    input(" your top movie/show genre is horror which means that you enjoy movies like Scream, The Conjuring, and Saw and many more, indicating that you like blood and jump-scares! have you watched From?")
+elif Adventure_points > Fantasy_points and Adventure_points > Comedy_points and Adventure_points > Romance_points and Adventure_points > Drama_points and Adventure_points > Thriller_points and Adventure_points > Horror_points and Adventure_points > Crime_points:
+    input(" your top movie/show genre is adventure meaning  you enjoy watching quest and love finding and completing tasks along the way! have you seen princess and the frog?")
+elif  Romance_points > Fantasy_points and  Romance_points > Comedy_points and  Romance_points > Adventure_points and  Romance_points > Drama_points and  Romance_points > Crime_points and  Romance_points > Thriller_points and  Romance_points > Horror_points:
+    input(" your top movie/show genre is romance which indicates that you love a good love story. have you watched my life with the walter boys?")
+else:
+    input("play again")
+    
+
+print(" hope you enjoyed this, if you did you can totally play again, just refresh!")
